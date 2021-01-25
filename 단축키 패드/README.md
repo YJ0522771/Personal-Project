@@ -28,23 +28,23 @@
 
 ### 2. 출력물
 
-![윗판1 (4)](README.assets/윗판1 (4).jpg)
+![윗판1 (4)](README.assets/윗판1(4).jpg)
 
 
 
-![윗판1 (1)](README.assets/윗판1 (1).jpg)
+![윗판1 (1)](README.assets/윗판1(1).jpg)
 
 
 
-![윗판1 (2)](README.assets/윗판1 (2).jpg)
+![윗판1 (2)](README.assets/윗판1(2).jpg)
 
 
 
-![윗판1 (3)](README.assets/윗판1 (3).jpg)
+![윗판1 (3)](README.assets/윗판1(3).jpg)
 
 
 
-![윗판1 (5)](README.assets/윗판1 (5).jpg)
+![윗판1 (5)](README.assets/윗판1(5).jpg)
 
 
 
