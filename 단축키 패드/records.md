@@ -10,11 +10,11 @@
 >
 > 졸업 논문은 영어로 적어야 하는데 영작을 바로 못하니 한국어로 작성 → 한 문장씩 번역기 돌림 → 직접 다듬기,의 반복.
 >
-> 그러다 보니 ctrl + c, ctrl + v 또는 ctrl + x, ctrl + v를 몇 번이나 눌렀는지 모르겠다.보통 ctrl 과 shift 키를 왼쪽 새끼손가락으로 누르는데, 하루 8시간 가까이를 꼬박 원고를 쓰다 보니 점점 새끼
+> 그러다 보니 ctrl + c, ctrl + v 또는 ctrl + x, ctrl + v를 몇 번이나 눌렀는지 모르겠다.
 >
-> 손가락이 아파오고 힘이 안 들어가더라.
+> 보통 ctrl 과 shift 키를 왼쪽 새끼손가락으로 누르는데, 하루 8시간 가까이를 꼬박 원고를 쓰다 보니 점점 새끼손가락이 아파오고 힘이 안 들어가더라.
 >
-> 그리고 요즘,파이썬 수업에서 VS code를 사용하니까, 코드를 돌릴 때마다 ctrl + s, ctrl + \`를 해줘야 한다.
+> 그리고 요즘, 파이썬 수업에서 VS code를 사용하니까, 코드를 돌릴 때마다 ctrl + s, ctrl + \`를 해줘야 한다.
 >
 > 아픈 것도 아픈 거지만, ctrl + \`는 세로로 일직선상에 놓여있어서 누르기도 불편하다.
 >
@@ -46,7 +46,7 @@
 
 ### 간략한 디자인
 
-![개요1](records.assets/개요1.jpg)
+<img src="records.assets/개요1.jpg" alt="개요1" style="zoom:80%;" />
 
 일단 자주 쓰는 6가지 키로 구성.
 
@@ -70,11 +70,11 @@
 
 ### 도면
 
-![윗판1-1](records.assets/윗판1-1.png)
+<img src="records.assets/윗판1-1.png" alt="윗판1-1" style="zoom:50%;" />
 
 **<평면도>**
 
-![윗판1-2](records.assets/윗판1-2.png)
+<img src="records.assets/윗판1-2.png" alt="윗판1-2" style="zoom:50%;" />
 
 **<좌측면도>**
 
@@ -82,13 +82,13 @@
 
 ### 출력물
 
-![윗판1 (4)](records.assets/윗판1(4).jpg)
+<img src="records.assets/윗판1(4).jpg" alt="윗판1 (4)" style="zoom: 50%;" />
 
 아케이드 버튼 끼운 모습.
 
 
 
-![윗판1 (1)](records.assets/윗판1(1).jpg)
+<img src="records.assets/윗판1(1).jpg" alt="윗판1 (1)" style="zoom: 50%;" />
 
 살짝 뜬다.
 
@@ -96,7 +96,7 @@
 
 
 
-![윗판1 (2)](records.assets/윗판1(2).jpg)
+<img src="records.assets/윗판1(2).jpg" alt="윗판1 (2)" style="zoom:50%;" />
 
 옆면도 좀 약한 듯하다.
 
@@ -104,13 +104,13 @@
 
 
 
-![윗판1 (3)](records.assets/윗판1(3).jpg)
+<img src="records.assets/윗판1(3).jpg" alt="윗판1 (3)" style="zoom:50%;" />
 
 윗판 높이도 30 mm로 낮춰도 될 거 같다.
 
 
 
-![윗판1 (5)](records.assets/윗판1(5).jpg)
+<img src="records.assets/윗판1(5).jpg" alt="윗판1 (5)" style="zoom:50%;" />
 
 전체적인 폭은 적당한 듯.
 
@@ -128,11 +128,11 @@
 
 ### 도면
 
-![윗판2-1](records.assets/윗판2-1.png)
+<img src="records.assets/윗판2-1.png" alt="윗판2-1" style="zoom:50%;" />
 
 **<평면도>**
 
-![윗판2-2](records.assets/윗판2-2.png)
+<img src="records.assets/윗판2-2.png" alt="윗판2-2" style="zoom:50%;" />
 
 **<정면도>**
 
@@ -142,19 +142,19 @@
 
 ###  출력물
 
-![윗판2(2)](records.assets/윗판2(2).jpg)
+<img src="records.assets/윗판2(2).jpg" alt="윗판2(2)" style="zoom:50%;" />
 
 버튼 고정이 잘 되는 걸 보니 윗면 두께는 적당한 듯하다.
 
 
 
-![윗판2(1)](records.assets/윗판2(1).jpg)
+<img src="records.assets/윗판2(1).jpg" alt="윗판2(1)" style="zoom:50%;" />
 
 이번 출력물의 크기는 잘 맞았지만, 키보드 옆에 직접 놓아보니 전체 패드의 높이가 이 정도면 딱 좋겠다는 생각이 들었다.
 
 
 
-![윗판2(3)](records.assets/윗판2(3).jpg)
+<img src="records.assets/윗판2(3).jpg" alt="윗판2(3)" style="zoom:50%;" />
 
 고민하다가 버튼의 다리 부분을 접어서 전체 패드의 높이를 줄이기로 하였다.
 
