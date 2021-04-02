@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="fw-bold">COMMUNITY</h1>
+<hr>
+<div class="dropdown d-flex justify-content-end">
+    <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        ----정렬----
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">최근작성순</a></li>
+        <li><a class="dropdown-item" href="#">추천많은순</a></li>
+        <li><a class="dropdown-item" href="#"></a></li>
+    </ul>
+</div>
+<br>
+<table class="table text-center">
+    <thead>
+        <tr>
+        <th scope="col" class="col-1">#</th>
+        <th scope="col" class="col-6">Title</th>
+        <th scope="col" class="col-1">Like</th>
+        <th scope="col" class="col-2">User</th>
+        <th scope="col" class="col-2">Created at</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for article_dict in article_dicts %}
+            <tr>
+            <td>{{ article_dict.pk }}</td>
+            <td>
+            <a href="{% url 'community:detail' article_dict.pk %}" class="text-decoration-none text-dark fw-bold">{{ article_dict.article.title }}</a>
+            </td>
+            <td class="fw-bold text-danger">{{ article_dict.like }}</td>
+            <td>{{ article_dict.article.user }}</td>
+            <td>{{ article_dict.article.created_at }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

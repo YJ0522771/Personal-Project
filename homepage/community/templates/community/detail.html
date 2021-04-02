@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% block content %}
+<h1 class="fw-bold">ARTICLE</h1>
+<hr>
+<h2 class="fw-bold">{{ article.title }}</h2>
+<br>
+<div class="d-flex">
+    <p class="me-4">작성자: <a href="{% url 'accounts:profile' article.user.username %}" class='text-dark fw-bold fs-5'>{{ article.user }}</a></p>
+    {% if request.user == article.user %}
+        <form action="{% url 'community:update' article.id %}" method="GET" class="d-inline">
+            <button class="btn text-primary p-0 my-1 mx-1"><i class="fas fa-edit"></i></button>
+        </form>
+        <form action="{% url 'community:delete' article.id %}" method="POST" class="d-inline mx-2">
+            {% csrf_token %}
+            <button class="btn text-danger p-0 my-1 mx-1"><i class="fas fa-trash-alt"></i></button>
+        </form>
+        <br>
+    {% endif %}
+</div>
+
+<hr>
+<div class="container">
+    {% if article.image %}
+        <div class="text-center">
+            <img src={{ article.image }} alt="이미지가 없습니다.">
+        </div>
+    {% endif %}
+    <h6>{{ article.content }}</h6>
+    <br>
+    <br>
+    <p class="my-0">작성시간: {{ article.created_at }}</p>
+    <p class="my-0">수정시간: {{ article.updated_at }}</p>
+    <br>
+    <form action="{% url 'community:like' article.pk %}" method="POST">
+        {% csrf_token %}
+        {% if user_like %}
+            <p class="text-danger fw-bold"> 
+                <button class="btn p-0 fas fa-heart fa-2x text-danger me-2"></button>
+                {{ like_count }}
+            </p>
+        {% else %}
+            <p class="text-dark fw-bold">
+                <button class="btn p-0 far fa-heart fa-2x text-dark me-2"></button> 
+                {{ like_count }}
+            </p>
+        {% endif %}
+    </form>
+</div>
+
+<hr>
+
+<br>
+<h2 class="fw-bold">COMMENTS</h2>
+<hr>
+<div class="container">
+    {% for com in comments %}
+        <p class="d-inline fw-bold fs-5">{{ com.user }} : </p>
+        <p class="d-inline">{{ com.content }}</p>
+        <p class="d-inline">({{ com.created_at }})</p>
+        {% if request.user == com.user %}
+            <form action="{% url 'community:delete_comment' article.id com.id %}" method="POST" class="d-inline">
+                {% csrf_token %}
+                <button class="btn text-danger btn-sm py-0 px-1"><i class="fas fa-eraser"></i></button>
+            </form>
+        {% endif %}
+    <br>
+    <br>
+    {% empty %}
+        <p>작성된 댓글이 없습니다.</p><br>
+    {% endfor %}
+</div>
+
+<hr>
+
+{% if request.user.is_authenticated %}
+    <form action="{% url 'community:create_comment' article.id %}" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form comment_form %}
+        <br>
+        <button class="btn btn-secondary fw-bold">Comment</button>
+    </form>
+{% else %}
+    <p>댓글 작성은 회원만 가능합니다.</p><br>
+{% endif %}
+
+<hr>
+
+<a href="{% url 'community:index' %}">Index</a>
+{% endblock %}
