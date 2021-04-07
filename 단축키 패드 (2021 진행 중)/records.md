@@ -4,6 +4,10 @@
 
 
 
+---
+
+
+
 ## 210122 개요
 
 > 약 한 달 전, 석사 졸업 논문 원고 쓸 당시, 
@@ -57,6 +61,10 @@
 가로 세로 길이는 버튼에 크기와 간격을 맞춰서 100 × 70 mm.
 
 조립은 뚜껑을 덮는 식으로.버튼의 색상 배치는 좀 더 생각해 봐야겠다.
+
+
+
+---
 
 
 
@@ -120,6 +128,10 @@
 
 
 
+---
+
+
+
 ## 210126 윗판 제작2
 
 > 어제의 수정 사항을 반영한 두 번째 윗판.
@@ -159,3 +171,96 @@
 고민하다가 버튼의 다리 부분을 접어서 전체 패드의 높이를 줄이기로 하였다.
 
 윗판의 높이를 20 mm로 수정하고, 전체 패드의 높이를 30 mm 초반이 되도록 제작할 예정이다.
+
+
+
+---
+
+
+
+## 210127 밑판 제작
+
+> 아두이노 나노가 들어갈 홈과 USB 연결 부위가 외부로 노출되도록 설계.
+
+
+
+### 도면
+
+<img src="records.assets/밑판1.png" alt="밑판1" style="zoom:50%;" />
+
+**<평면도>**
+
+
+
+<img src="records.assets/밑판2.png" alt="밑판2" style="zoom:50%;" />
+
+**<정면도>**
+
+<img src="records.assets/밑판3.png" alt="밑판3" style="zoom:50%;" />
+
+
+
+### 출력물
+
+<img src="records.assets/밑판(2).jpg" alt="밑판(2)" style="zoom:50%;" />
+
+밑판은 나름 한 번만에 잘 나온 것 같다.
+
+
+
+<img src="records.assets/조립(1).jpg" alt="조립(1)" style="zoom:50%;" />
+
+출력물들을 조립한 모습.
+
+
+
+<img src="records.assets/조립(2).jpg" alt="조립(2)" style="zoom:50%;" />
+
+
+
+<img src="records.assets/조립(3).jpg" alt="조립(3)" style="zoom:50%;" />
+
+전체 높이는 31 mm 정도.
+
+
+
+---
+
+
+
+## 210206 PCB판
+
+> 코드 조사하다가, 인터럽트를 사용해야하는데 아두이노에서 인터럽트 핀은 하나 밖에 없다는 것을 알고 고민.
+>
+> 다이오드를 잘 사용하면, 각 버튼이 연결된 디지털 핀과 인터럽트 핀에 동시에 전압이 걸리도록 할 수 있을 거 같다 생각하였다.
+>
+> 연결할 것이 많아지므로 PCB판을 사용하는 게 좋을 거 같다 생각하여 집에 있던 5*7 cm PCB를 안에 넣기 위한 틀을 제작.
+
+
+
+### 도면
+
+<img src="records.assets/PCB판1.png" alt="PCB판1" style="zoom:50%;" />
+
+**<평면도>**
+
+
+
+<img src="records.assets/PCB판2.png" alt="PCB판2" style="zoom:50%;" />
+
+**<정면도>**
+
+
+
+<img src="records.assets/PCB판3.png" alt="PCB판3" style="zoom:50%;" />
+
+
+
+### 출력물
+
+<img src="records.assets/PCB판 (1).jpg" alt="PCB판 (1)" style="zoom:50%;" />
+
+
+
+---
+
