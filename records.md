@@ -178,7 +178,37 @@
 
 
 
-## 210127 밑판 제작
+## 210127 윗판3 + 밑판 제작
+
+## 윗판3
+
+### 도면
+
+<img src="records.assets/윗판3-1.png" alt="윗판3-1" style="zoom:50%;" />
+
+**<평면도>**
+
+<img src="records.assets/윗판3-2.png" alt="윗판3-2" style="zoom:50%;" />
+
+**<정면도>**
+
+높이를 20 mm로 조절.
+
+
+
+### 출력물
+
+<img src="records.assets/윗판3(1).jpg" alt="윗판3(1)" style="zoom:50%;" />
+
+
+
+<img src="records.assets/윗판3(2).jpg" alt="윗판3(2)" style="zoom:50%;" />
+
+
+
+
+
+## 밑판
 
 > 아두이노 나노가 들어갈 홈과 USB 연결 부위가 외부로 노출되도록 설계.
 
